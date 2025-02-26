@@ -28,8 +28,37 @@ body{
     display: flex;
     flex-direction: column;
     width: 23%;
-
 }
+@media (max-width: 480px) {
+    .child-box{
+        width: 80% !important;
+        /* display: none; */
+    }
+    .text-box h3{
+        font-size: 70% !important;
+    }
+    .text-box p{
+        font-size: 11px !important;
+        /* display: none; */
+    }
+    .change-button{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 789px) {
+    .child-box{
+        width: 80%;
+    }
+}
+@media (min-width: 790px) and (max-width:1024px) {
+    .child-box{
+        width: 40%;
+    }
+}
+@media (min-width: 1025px){
+    .child-box{width: 30%;
+}}
 .child-box img{
     /* width: 50%; */
     border-top-right-radius: 13px;
@@ -79,6 +108,9 @@ body{
 }
 .text-box{
     padding: 5px;
+}
+.text-box p{
+    font-size: 15px;
 }
 .change-button{
     color: hsl(245, 96%, 49%);
